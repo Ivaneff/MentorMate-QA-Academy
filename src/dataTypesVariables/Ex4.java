@@ -1,20 +1,23 @@
 package dataTypesVariables;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Ex4 {
     public static void main(String[] args) {
         String asterix = "*";
         String space = " ";
-        int size = 21;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the size of the tree");
+        int size = sc.nextInt();
         ArrayList<String> listAsterix = new ArrayList<>();
-        ArrayList<String> listSpace = new ArrayList<>(size / 2);
-        for (int i = 0; i < size / 2; i++) {
+        ArrayList<String> listSpace = new ArrayList<>(size);
+        for (int i = 0; i < size ; i++) {
             listSpace.add(space);
         }
-        for (int i = 1; i <= size; i++) {
+        for (int i = 1; i <= size*2; i++) {
             listAsterix.add(asterix);
-            if (i < size & i % 2 != 0) {
+            if (i < size*2 & i % 2 != 0) {
                 printList(listSpace);
                 printList(listAsterix);
                 listSpace.remove(space);
@@ -22,7 +25,6 @@ public class Ex4 {
             }
         }
     }
-
     static void printList(ArrayList<String> list) {
         for (String element : list) {
             System.out.print(element);
