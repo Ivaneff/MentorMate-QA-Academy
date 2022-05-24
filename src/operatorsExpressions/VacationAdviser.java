@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class VacationAdviser {
     public static void main(String[] args) {
-        //Beach, mountain, N persons, budget
+        
         System.out.println("Hello, please type Beach or Mountain for your destination: ");
         Scanner sc = new Scanner(System.in);
         String desiredDestination = sc.next();
