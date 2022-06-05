@@ -10,7 +10,7 @@ public class ReverseLinkedList {
         lList.add("Gama");
         lList.add("Delta");
         LinkedList<String> rList = new LinkedList<>();
-        for (int i = lList.size()-1; i >=0 ; i--) {
+        for (int i = lList.size()-1; i >= 0 ; i--) {
             rList.add(lList.get(i));
         }
         System.out.println(rList);
