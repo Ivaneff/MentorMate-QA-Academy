@@ -37,4 +37,24 @@ public class Car {
         this.horsePower = horsePower;
         this.secondHand = secondHand;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public int getYearRelease() {
+        return yearRelease;
+    }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public boolean isSecondHand() {
+        return secondHand;
+    }
 }
