@@ -13,6 +13,10 @@ public class MiddleCharacterOfString {
 
     private static void showMiddleCharacter(String word) {
         System.out.print("Middle character: ");
+        if(word.length()==1){
+            System.out.println(word);
+            return;
+        }
         if (word.length() % 2 == 0) {
             System.out.print(word.charAt((word.length() / 2) - 1) + ", ");
             System.out.println(word.charAt((word.length() / 2)));
