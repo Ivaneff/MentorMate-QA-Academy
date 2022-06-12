@@ -21,7 +21,7 @@ public class MiddleCharacterOfString {
             System.out.print(word.charAt((word.length() / 2) - 1) + ", ");
             System.out.println(word.charAt((word.length() / 2)));
         } else {
-            System.out.println(word.charAt((word.length() % 2) + 1));
+            System.out.println(word.charAt(word.length() / 2) );
         }
     }
 }
