@@ -43,6 +43,7 @@ public class CalculatorTestCases {
     public Object[][] dpMethod5(){
         return new Object[][]{{10,2,0},{8,4,0}};
     }
+
     @Test(dataProvider = "DP5",groups = "g5")
     public void modDivTest(int a, int b, int c){
         assertEquals(a%b,c);

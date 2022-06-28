@@ -3,6 +3,8 @@ package restAssuredHomework;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.*;
+import restAssuredDemo.LoginDto;
+
 import static io.restassured.RestAssured.*;
 import static org.testng.Assert.assertEquals;
 
@@ -15,7 +17,7 @@ public class LoggingAuthenticationTests {
     @Test
     public void loginTest() {
 
-        LoginDto2 loginDto = new LoginDto2();
+        LoginDto loginDto = new LoginDto();
         loginDto.setUsernameOrEmail("Ivo1");
         loginDto.setPassword("ivoivo1");
 
