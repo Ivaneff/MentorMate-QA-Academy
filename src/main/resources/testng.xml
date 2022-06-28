@@ -1,0 +1,10 @@
+<suite name="Test-method Suite" parallel="methods" thread-count="5" >
+
+    <test name="Calculator" group-by-instances="true">
+        <classes>
+            <class
+                    name="testNG.CalculatorTestCases" />
+        </classes>
+    </test>
+
+</suite>
