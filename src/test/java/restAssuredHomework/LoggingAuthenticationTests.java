@@ -3,7 +3,7 @@ package restAssuredHomework;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.*;
-import restAssuredDemo.LoginDto;
+import restAssuredHomework.LoginDto;
 
 import static io.restassured.RestAssured.*;
 import static org.testng.Assert.assertEquals;
