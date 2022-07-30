@@ -1,7 +1,6 @@
 package selenium;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import javafx.scene.layout.Priority;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,9 +10,8 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-public class testSelenium {
+public class TestSelenium {
     WebDriver driver;
     private final String basUri = "http://training.skillo-bg.com:4300/posts/all";
 
